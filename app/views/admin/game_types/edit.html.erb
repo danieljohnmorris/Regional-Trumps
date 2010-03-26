@@ -1,6 +1,6 @@
 <h1>Editing game_type</h1>
 
-<% form_for(:admin, @game_type) do |f| %>
+<% form_for(@game_type, :url => admin_game_type_path(@game_type), :html => {:method => :put}) do |f| %>
   <%= f.error_messages %>
 
   <p>

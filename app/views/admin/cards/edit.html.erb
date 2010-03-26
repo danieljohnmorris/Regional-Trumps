@@ -1,6 +1,6 @@
 <h1>Editing card</h1>
 
-<% form_for(:admin, @card) do |f| %>
+<% form_for(@card, :url => admin_card_path(@card), :html => {:method => :put}) do |f| %>
   <%= f.error_messages %>
 
   <p>

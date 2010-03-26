@@ -1,6 +1,6 @@
 <h1>New card</h1>
 
-<% form_for(:admin, @card) do |f| %>
+<% form_for([:admin, @card]) do |f| %>
   <%= f.error_messages %>
 
   <p>

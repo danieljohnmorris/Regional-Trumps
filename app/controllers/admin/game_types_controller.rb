@@ -47,8 +47,8 @@ class Admin::GameTypesController < ApplicationController
     respond_to do |format|
       if @game_type.save
         flash[:notice] = 'GameType was successfully created.'
-        format.html { redirect_to(@game_type) }
-        format.xml  { render :xml => admin_game_type_path(@game_type), :status => :created, :location => @game_type }
+        format.html { redirect_to(admin_game_type_path(@game_type)) }
+        format.xml  { render :xml => @game_type, :status => :created, :location => @game_type }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @game_type.errors, :status => :unprocessable_entity }
