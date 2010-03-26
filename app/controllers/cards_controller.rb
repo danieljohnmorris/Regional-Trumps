@@ -3,6 +3,7 @@ class CardsController < ApplicationController
   # GET /cards.xml
   def index
     @cards = Card.all
+    @root_card = Card.find_by_parent_id(nil)
 
     respond_to do |format|
       format.html # index.html.erb

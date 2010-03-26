@@ -1,22 +1,19 @@
-<h1>Listing cards</h1>
+<h1>Browse cards</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Parent</th>
-  </tr>
-
-<% @cards.each do |card| %>
-  <tr>
-    <td><%=h card.name %></td>
-    <td><%=h card.parent_id %></td>
-    <td><%= link_to 'Show', card %></td>
-    <td><%= link_to 'Edit', edit_card_path(card) %></td>
-    <td><%= link_to 'Destroy', card, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New card', new_card_path %>
+<ul>
+    <li>
+        <%= link_to @root_card.name, @root_card %>
+        <ul>
+        <% @root_card.children.each do |c1| %>
+            <li>
+                <%= link_to c1.name, c1 %>
+                <ul>
+                <% c1.children.each do |c2| %>
+                    <li><%= link_to c2.name, c2 %></li>
+                <% end %>
+                </ul>
+            </li>
+        <% end %>
+        </ul>
+    </li>
+</ul>

@@ -10,13 +10,13 @@
   <tr>
     <td><%=h card.name %></td>
     <td><%=h card.parent_id %></td>
-    <td><%= link_to 'Show', card %></td>
-    <td><%= link_to 'Edit', edit_card_path(card) %></td>
-    <td><%= link_to 'Destroy', card, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_card_path(card) %></td>
+    <td><%= link_to 'Edit', edit_admin_card_path(card) %></td>
+    <td><%= link_to 'Destroy', admin_card_path(card), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New card', new_card_path %>
+<%= link_to 'New card', new_admin_card_path %>
