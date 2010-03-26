@@ -78,7 +78,7 @@ class Admin::CardsController < ApplicationController
     @card.destroy
 
     respond_to do |format|
-      format.html { redirect_to(cards_url) }
+      format.html { redirect_to(admin_cards_url) }
       format.xml  { head :ok }
     end
   end
