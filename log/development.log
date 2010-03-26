@@ -1041,3 +1041,15 @@ Completed in 17ms (View: 13, DB: 0) | 200 OK [http://192.168.0.105/]
 Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:21:09) [GET]
 Rendering index/index
 Completed in 17ms (View: 13, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:27:01) [GET]
+Rendering index/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:27:33) [GET]
+Rendering index/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://192.168.0.105/]
