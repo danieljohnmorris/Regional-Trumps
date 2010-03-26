@@ -1,4 +1,6 @@
 class Admin::CardsController < ApplicationController
+  layout "admin"
+  
   # GET /cards
   # GET /cards.xml
   def index
