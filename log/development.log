@@ -1053,3 +1053,133 @@ Completed in 6ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
 Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:27:33) [GET]
 Rendering index/index
 Completed in 6ms (View: 3, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:38:09) [GET]
+Rendering index/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:38:10) [GET]
+Rendering index/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:38:11) [GET]
+Rendering index/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:38:11) [GET]
+Rendering index/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:38:12) [GET]
+Rendering index/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:38:12) [GET]
+Rendering index/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:38:12) [GET]
+Rendering index/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 192.168.0.101 at 2010-03-26 20:38:17) [GET]
+Rendering index/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://192.168.0.105/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCard Columns (0.0ms)[0m   [0mMysql::Error: Table 'trumps_development.cards' doesn't exist: SHOW FIELDS FROM `cards`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCards (20100326203555)
+  [4;35;1mSQL (10.9ms)[0m   [0mCREATE TABLE `cards` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `parent_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100326203555')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW FIELDS FROM `cards`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `cards`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `cards`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `regions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `regions`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `regions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCard Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `cards`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (0.7ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('United Kingdom', '2010-03-26 20:40:54', NULL, '2010-03-26 20:40:54')[0m
+  [4;36;1mSQL (5.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCard Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `cards`[0m
+  [4;35;1mCard Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `cards`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCard Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `cards`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (0.5ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('England', '2010-03-26 20:45:21', NULL, '2010-03-26 20:45:21')[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mCard Load (1.8ms)[0m   [0mSELECT * FROM `cards` WHERE (`cards`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Update (2.2ms)[0m   [0mUPDATE `cards` SET `parent_id` = 1, `updated_at` = '2010-03-26 20:45:56' WHERE `id` = 2[0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mCard Create (0.4ms)[0m   [0;1mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('Wales', '2010-03-26 20:46:21', 1, '2010-03-26 20:46:21')[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (1.4ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('Wales', '2010-03-26 20:46:29', 1, '2010-03-26 20:46:29')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mCard Load (0.5ms)[0m   [0mSELECT * FROM `cards` WHERE (`cards`.`id` = 2) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (0.3ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('Scotland', '2010-03-26 20:46:50', 1, '2010-03-26 20:46:50')[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCard Create (0.3ms)[0m   [0;1mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('Northern Ireland', '2010-03-26 20:47:05', 1, '2010-03-26 20:47:05')[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (0.3ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('North East', '2010-03-26 20:47:29', 2, '2010-03-26 20:47:29')[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCard Create (0.3ms)[0m   [0;1mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('North West', '2010-03-26 20:47:34', 2, '2010-03-26 20:47:34')[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (0.4ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('Yorkshire & The Humber ', '2010-03-26 20:48:24', 2, '2010-03-26 20:48:24')[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCard Create (0.2ms)[0m   [0;1mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('Yorkshire & The Humber', '2010-03-26 20:48:30', 2, '2010-03-26 20:48:30')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Destroy (0.5ms)[0m   [0mDELETE FROM `cards` WHERE `id` = 10[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mCard Load (0.7ms)[0m   [0mSELECT * FROM `cards` WHERE (`cards`.`id` = 10) [0m
+  [4;36;1mCard Load (0.6ms)[0m   [0;1mSELECT * FROM `cards` WHERE (`cards`.`id` = 9) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCard Create (0.5ms)[0m   [0;1mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('East Midlands', '2010-03-26 20:49:24', 2, '2010-03-26 20:49:24')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (0.3ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('West Midlands', '2010-03-26 20:49:30', 2, '2010-03-26 20:49:30')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCard Create (0.4ms)[0m   [0;1mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('East of England', '2010-03-26 20:49:39', 2, '2010-03-26 20:49:39')[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (0.3ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('London', '2010-03-26 20:50:11', 2, '2010-03-26 20:50:11')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCard Create (0.3ms)[0m   [0;1mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('South East', '2010-03-26 20:50:18', 2, '2010-03-26 20:50:18')[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCard Create (0.5ms)[0m   [0mINSERT INTO `cards` (`name`, `updated_at`, `parent_id`, `created_at`) VALUES('South West', '2010-03-26 20:50:24', 2, '2010-03-26 20:50:24')[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCOMMIT[0m
