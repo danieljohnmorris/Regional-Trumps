@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  card_id: 1
+  stat_id: 1
+  value: 1.5
+
+two:
+  card_id: 1
+  stat_id: 1
+  value: 1.5

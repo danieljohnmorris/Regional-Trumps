@@ -1,13 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :categories
-  map.resources :game_types
   map.resources :cards
   
   map.namespace :admin do |admin|
     admin.index '/', :controller => 'index', :action => 'index'
     admin.resources :cards
-    admin.resources :game_types
+    admin.resources :stats
+    admin.resources :values
     admin.resources :categories
+    admin.resources :game_types
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

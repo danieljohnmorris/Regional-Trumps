@@ -1,0 +1,18 @@
+<p>
+  <b>Card:</b>
+  <%=h @value.card.name %>
+</p>
+
+<p>
+  <b>Stat:</b>
+  <%=h @value.stat.name %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @value.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_value_path(@value) %> |
+<%= link_to 'Back', admin_values_path(@value) %>

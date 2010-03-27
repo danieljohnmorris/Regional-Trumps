@@ -1,0 +1,24 @@
+<h1>Editing stat</h1>
+
+<% form_for(@stat, :url => admin_stat_path(@stat), :html => {:method => :put}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :category_id %><br />
+    <%= f.text_field :category_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', admin_stat_path(@stat) %> |
+<%= link_to 'Back', admin_stats_path %>

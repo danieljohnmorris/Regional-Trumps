@@ -1,0 +1,24 @@
+<h1>Listing values</h1>
+
+<table>
+  <tr>
+    <th>Card</th>
+    <th>Stat</th>
+    <th>Value</th>
+  </tr>
+
+<% @values.each do |value| %>
+  <tr>
+    <td><%=h value.card.name %></td>
+    <td><%=h value.stat.name %></td>
+    <td><%=h value.value %></td>
+    <td><%= link_to 'Show', admin_value_path(value) %></td>
+    <td><%= link_to 'Edit', edit_admin_value_path(value) %></td>
+    <td><%= link_to 'Destroy', admin_value_path(value), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New value', new_admin_value_path %>

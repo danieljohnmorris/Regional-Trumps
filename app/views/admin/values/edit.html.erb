@@ -1,0 +1,24 @@
+<h1>Editing value</h1>
+
+<% form_for(@value, :url => admin_value_path(@value), :html => {:method => :put}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :card_id %><br />
+    <%= f.text_field :card_id %>
+  </p>
+  <p>
+    <%= f.label :stat_id %><br />
+    <%= f.text_field :stat_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', admin_value_path(@value) %> |
+<%= link_to 'Back', admin_values_path %>

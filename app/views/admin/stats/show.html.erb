@@ -1,0 +1,17 @@
+<p>
+  <b>Category:</b>
+  <%=h @stat.category.name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @stat.name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @stat.type %>
+</p>
+
+<%= link_to 'Edit', edit_admin_stat_path(@stat) %> |
+<%= link_to 'Back', admin_stats_path %>
