@@ -9,9 +9,9 @@
 
 <% @stats.each do |stat| %>
   <tr>
-    <td><%=h stat.category_id %></td>
-    <td><%=h stat.name %></td>
-    <td><%=h stat.type %></td>
+    <th><%=h stat.name %></th>
+    <td><%=h stat.percent %></td>
+    <td><%=h stat.category.name %></td>
     <td><%= link_to 'Show', admin_stat_path(stat) %></td>
     <td><%= link_to 'Edit', edit_admin_stat_path(stat) %></td>
     <td><%= link_to 'Destroy', admin_stat_path(stat), :confirm => 'Are you sure?', :method => :delete %></td>

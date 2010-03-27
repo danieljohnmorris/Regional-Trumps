@@ -1,3 +1,28 @@
 <h1><%= @card.name %></h1>
 
 <%= image_tag("/images/cards/#{@card.id}.jpg", :alt => "Map of #{@card.name}", :width => 100) %>
+
+<h2>Stats</h2>
+<ul>
+<% @game_types.each do |gt| %>
+    <li>
+        <h3><%= gt.name %></h3>
+
+        <ul>
+        <% gt.categories.each do |cat| %>
+            <li>
+                <h4><%= cat.name %></h4>
+
+                <ul>
+                <% cat.stats.each do |stat| %>
+                    <li>
+                        <h5><%= stat.name %></h5>
+                    </li>
+                <% end %>
+                </ul>
+            </li>
+        <% end %>
+        </ul>
+    </li>
+<% end %>
+</ul>

@@ -5,11 +5,11 @@
 
   <p>
     <%= f.label :card_id %><br />
-    <%= f.text_field :card_id %>
-  </p>
-  <p>
-    <%= f.label :stat_id %><br />
-    <%= f.text_field :stat_id %>
+  <%= f.collection_select :card_id, Card.all, :id, :name, :prompt => "Select..." %>
+</p>
+<p>
+  <%= f.label :stat_id %><br />
+  <%= f.collection_select :stat_id, Stat.all, :id, :name, :prompt => "Select..." %>
   </p>
   <p>
     <%= f.label :value %><br />

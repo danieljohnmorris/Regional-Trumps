@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :parent_id %><br />
-    <%= f.text_field :parent_id %>
+    <%= f.collection_select :parent_id, Card.all, :id, :name, :prompt => "Select..." %>
   </p>
   <p>
     <%= f.submit 'Update' %>

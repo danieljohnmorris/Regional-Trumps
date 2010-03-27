@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :game_type_id %><br />
-    <%= f.text_field :game_type_id %>
+    <%= f.collection_select :game_type_id, GameType.all, :id, :name, :prompt => "Select..." %>
   </p>
   <p>
     <%= f.submit 'Update' %>
